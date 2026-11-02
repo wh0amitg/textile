@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>textile</AssemblyName>
+    <RootNamespace>DecompileTool</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <AssetTargetFallback>net8.0-windows;net8.0</AssetTargetFallback>
+    <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ICSharpCode.Decompiler" Version="9.0.0.7889"/>
+    <PackageReference Include="ICSharpCode.BamlDecompiler" Version="9.0.0.7889"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\logo.ico" />
+    <Resource Include="Resources\TelegramIcon.png" />
+    <Resource Include="Resources\Moon.png" />
+    <Resource Include="Resources\Sun.png" />
+    <Resource Include="Resources\InfoBlack.png" />
+    <Resource Include="Resources\InfoWhite.png" />
+    <Resource Include="Resources\CodeBlack.png" />
+    <Resource Include="Resources\CodeWhite.png" />
+    <Resource Include="Resources\PersonBlack.png" />
+    <Resource Include="Resources\PersonWhite.png" />
+    <Resource Include="Resources\CoolveticaRg.otf" />
+    <Resource Include="Resources\removeblack.png" />
+    <Resource Include="Resources\removewhite.png" />
+    <Resource Include="Resources\closeblack.png" />
+    <Resource Include="Resources\closewhite.png" />
+  </ItemGroup>
+
+</Project>
